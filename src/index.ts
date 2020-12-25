@@ -8,7 +8,7 @@ const json = JSON.stringify(schema, null, 2);
 
 console.log(red(json));
 
-fs.writeFile(path.join(__dirname, "./../db.json"), json, err => {
+fs.writeFile(path.join(__dirname, "db.json"), json, err => {
   if (err) {
     console.log(red(err.message));
   } else {
