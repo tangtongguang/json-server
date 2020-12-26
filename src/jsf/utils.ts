@@ -1,5 +1,5 @@
-import jsf from '../jsf'
-import refs from '../refs';
+import jsf from '.'
+import refs from './ref';
 
 
 const generate = async (schema: any): Promise<any[]> => {

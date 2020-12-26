@@ -1,5 +1,5 @@
 
-import { generate, addMin } from './utils';
+import { generate, addMin } from '../jsf/utils';
 
 export const schema: jsf.Schema = {
   type: 'array',
@@ -17,6 +17,10 @@ export const schema: jsf.Schema = {
       },
       ref: {
         $ref: 'otherSchema'
+      },
+      ser: {
+        type: 'string',
+        format: 'semver'
       }
 
     }

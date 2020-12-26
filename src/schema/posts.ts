@@ -1,5 +1,5 @@
 import jsf from 'json-schema-faker';
-import { generate, addMin } from './utils';
+import { generate, addMin } from '../jsf/utils';
 
 export const schema: jsf.Schema = {
   type: 'array',
