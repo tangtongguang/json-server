@@ -17,7 +17,9 @@ function gen() {
         [keys[index]]: value
       }
     })
-    fs.writeFile(path.join(__dirname, "db.json"), JSON.stringify(json, null, 2), err => {
+    const result = JSON.stringify(json, null, 2);
+    console.log(red(JSON.stringify(datas[0][0], null, 2)))
+    fs.writeFile(path.join(__dirname, "db.json"), result, err => {
       if (err) {
         console.log(red(err.message));
       } else {

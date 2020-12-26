@@ -1,4 +1,4 @@
-import jsf from 'json-schema-faker';
+
 import { generate, addMin } from './utils';
 
 export const schema: jsf.Schema = {
@@ -7,15 +7,23 @@ export const schema: jsf.Schema = {
     type: 'object',
     required: ['id'],
     properties: {
-      id: { type: 'string' },
+      id: {
+        type: 'object',
+        chance: "user"
+      },
+      url: {
+        type: 'string',
+        faker: 'address.city'
+      }
 
     }
   }
 }
 
 export interface User {
-
-  id: string
+  id: string,
+  url: string,
+  name: string
 }
 
 export const genUsers = async (num?: number): Promise<User[]> => {

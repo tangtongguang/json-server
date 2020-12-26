@@ -1,4 +1,4 @@
-import jsf from 'json-schema-faker'
+import jsf from '../jsf'
 const generate = async (schema: any): Promise<any[]> => {
   return await jsf.resolve(schema);
 };
