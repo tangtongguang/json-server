@@ -13,12 +13,12 @@ export const schema: jsf.Schema = {
   }
 }
 
-export interface User {
+export interface Post {
 
   id: string
 }
 
-export const genUsers = async (num?: number): Promise<User[]> => {
+export const genPosts = async (num?: number): Promise<Post[]> => {
   const data = await generate(addMin(schema, num))
 
 
