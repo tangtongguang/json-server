@@ -14,6 +14,9 @@ export const schema: jsf.Schema = {
       url: {
         type: 'string',
         faker: 'address.city'
+      },
+      ref: {
+        $ref: 'otherSchema'
       }
 
     }

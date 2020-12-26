@@ -1,6 +1,9 @@
 import jsf from '../jsf'
+import refs from '../refs';
+
+
 const generate = async (schema: any): Promise<any[]> => {
-  return await jsf.resolve(schema);
+  return await jsf.resolve(schema, refs);
 };
 
 const addMin = (schema: any, num?: number) => {
