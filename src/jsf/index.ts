@@ -5,6 +5,7 @@ import register from './formats'
 jsf.extend('faker', () => {
   return faker;
 })
+jsf.option({ useExamplesValue: true })
 register(jsf);
 export default jsf.extend('chance', () => {
   let chance = new Chance();

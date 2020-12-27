@@ -1,4 +1,4 @@
-import schema from './schema'
+import schema, { keys } from './schema'
 
 import { red, green } from 'chalk';
 import fs from 'fs';
@@ -8,9 +8,9 @@ import path from 'path';
 
 function gen() {
 
-  Promise.all(Object.values(schema)).then(datas => {
+  Promise.all(schema).then(datas => {
 
-    let keys = Object.keys(schema);
+
     let json = datas.map((value, index) => {
 
       return {
@@ -18,7 +18,7 @@ function gen() {
       }
     })
     const result = JSON.stringify(json, null, 2);
-    console.log(red(JSON.stringify(datas[0][0], null, 2)))
+    //console.log(red(JSON.stringify(datas[0][0], null, 2)))
     fs.writeFile(path.join(__dirname, "db.json"), result, err => {
       if (err) {
         console.log(red(err.message));
