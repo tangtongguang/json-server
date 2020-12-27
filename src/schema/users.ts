@@ -2,12 +2,36 @@
 import { red } from 'chalk';
 import { generate, addMin } from '../jsf/utils';
 
+
+/**
+ * years 
+ */
 export const schema: jsf.Schema = {
   type: 'array',
   items: {
     type: 'object',
-    required: ['year', 'pattern', 'date', 'faker', 'fixedValues', 'positiveInt'],
+    required: [
+      'years',//["2004-05-07T21:57:57.506Z","2004-05-07T21:58:26.882Z"]
+      'year',//1939
+      'pattern',//yes|no
+      'date',
+      'faker',
+      'fixedValues',
+      'positiveInt'
+    ],
     properties: {
+      years: {
+        type: 'array',
+        items: {
+          type: 'string',
+
+          sequentialDate: 'minutes',
+
+        },
+        minItems: 2,
+        maxItems: 2
+
+      },
       year: {
         type: 'string',
         chance: {
@@ -36,8 +60,8 @@ export const schema: jsf.Schema = {
         items:
           { type: 'integer', initialOffset: 100, autoIncrement: true }
         ,
-        minItems: 10,
-        maxItems: 11
+        minItems: 1,
+        maxItems: 1
       },
       fixedValues: {
         type: 'array',
