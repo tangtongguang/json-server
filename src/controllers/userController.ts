@@ -1,12 +1,10 @@
-import express from 'express'
-const router = express.Router();
+
 import { genUsers } from '../schema/users';
 
-
-
-/**
+export default {
+  /**
   * @swagger
-  * /users:
+  * /users/echo:
   *   get:
   *     description: Returns users
   *     tags:
@@ -15,14 +13,17 @@ import { genUsers } from '../schema/users';
   *      - application/json
   *     responses:
   *       200:
-  *         description: users
+  *         description: let
   */
-router.get('/echo', async (req, res) => {
-  const data = await genUsers(5);
-  res.jsonp({
-    data
-  })
-})
+  async all(req: Request, res: any) {
+    const data = await genUsers(5);
+    res.jsonp({
+      data
+    })
+  }
+
+}
 
 
-export default router;
+
+
