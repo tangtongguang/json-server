@@ -29,6 +29,7 @@
     "chalk": "^4.1.0",
     "chance": "^1.1.7",
     "faker": "^5.1.0",
+    "redoc": "^2.0.0-rc.45",
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6",
     "ts-node-dev": "^1.1.1"

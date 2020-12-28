@@ -4,7 +4,7 @@ import path from 'path';
 import addRoute from './router'
 import swaggerJsdoc from 'swagger-jsdoc'
 import swaggerUi from 'swagger-ui-express'
-
+import express from 'express'
 const PORT = 3000;
 
 const swaggerDefinition = {
@@ -41,14 +41,15 @@ server.get('/echo', (req, res) => {
   res.jsonp(req.query)
 })
 addRoute(server)
-
 // Serve swagger docs the way you like (Recommendation: swagger-tools)
 server.get('/api-docs.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(swaggerSpec);
 });
 server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+const root = path.normalize(__dirname + '/..');
 
+server.use(express.static(`${root}/public`));
 
 // Add custom routes before JSON Server router
 
