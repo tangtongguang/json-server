@@ -24,9 +24,13 @@
     "@types/json-schema-faker": "^0.5.1",
     "@types/json-server": "^0.14.3",
     "@types/node": "^14.14.16",
+    "@types/swagger-jsdoc": "^3.0.2",
+    "@types/swagger-ui-express": "^4.1.2",
     "chalk": "^4.1.0",
     "chance": "^1.1.7",
     "faker": "^5.1.0",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.1.6",
     "ts-node-dev": "^1.1.1"
   }
 }

@@ -2,6 +2,42 @@
 # yarn lockfile v1
 
 
+"@apidevtools/json-schema-ref-parser@^9.0.6":
+  version "9.0.6"
+  resolved "https://registry.npm.taobao.org/@apidevtools/json-schema-ref-parser/download/@apidevtools/json-schema-ref-parser-9.0.6.tgz#5d9000a3ac1fd25404da886da6b266adcd99cf1c"
+  integrity sha1-XZAAo6wf0lQE2ohtprJmrc2Zzxw=
+  dependencies:
+    "@jsdevtools/ono" "^7.1.3"
+    call-me-maybe "^1.0.1"
+    js-yaml "^3.13.1"
+
+"@apidevtools/openapi-schemas@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/@apidevtools/openapi-schemas/download/@apidevtools/openapi-schemas-2.0.4.tgz#bae1cef77ebb2b3705c7cc6911281da5153c1ab3"
+  integrity sha1-uuHO9367KzcFx8xpESgdpRU8GrM=
+
+"@apidevtools/swagger-methods@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.npm.taobao.org/@apidevtools/swagger-methods/download/@apidevtools/swagger-methods-3.0.2.tgz#b789a362e055b0340d04712eafe7027ddc1ac267"
+  integrity sha1-t4mjYuBVsDQNBHEur+cCfdwawmc=
+
+"@apidevtools/swagger-parser@10.0.2":
+  version "10.0.2"
+  resolved "https://registry.npm.taobao.org/@apidevtools/swagger-parser/download/@apidevtools/swagger-parser-10.0.2.tgz#f4145afb7c3a3bafe0376f003b5c3bdeae17a952"
+  integrity sha1-9BRa+3w6O6/gN28AO1w73q4XqVI=
+  dependencies:
+    "@apidevtools/json-schema-ref-parser" "^9.0.6"
+    "@apidevtools/openapi-schemas" "^2.0.4"
+    "@apidevtools/swagger-methods" "^3.0.2"
+    "@jsdevtools/ono" "^7.1.3"
+    call-me-maybe "^1.0.1"
+    z-schema "^4.2.3"
+
+"@jsdevtools/ono@^7.1.3":
+  version "7.1.3"
+  resolved "https://registry.npm.taobao.org/@jsdevtools/ono/download/@jsdevtools/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
+  integrity sha1-nfA7vXxpalxYiFw0qgbaQchUN5Y=
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.npm.taobao.org/@sindresorhus/is/download/@sindresorhus/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -135,6 +171,19 @@
   version "0.0.30"
   resolved "https://registry.npm.taobao.org/@types/strip-json-comments/download/@types/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha1-mqMMBNshKpoGSdaub9UKzMQHSKE=
+
+"@types/swagger-jsdoc@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.npm.taobao.org/@types/swagger-jsdoc/download/@types/swagger-jsdoc-3.0.2.tgz#a94a953eb4a483fe2bb56a4d87131bf11ec54cd6"
+  integrity sha1-qUqVPrSkg/4rtWpNhxMb8R7FTNY=
+
+"@types/swagger-ui-express@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.npm.taobao.org/@types/swagger-ui-express/download/@types/swagger-ui-express-4.1.2.tgz#cfc884904a104c3193f46f423d04ee0416be1ef4"
+  integrity sha1-z8iEkEoQTDGT9G9CPQTuBBa+HvQ=
+  dependencies:
+    "@types/express" "*"
+    "@types/serve-static" "*"
 
 accepts@~1.3.5, accepts@~1.3.7:
   version "1.3.7"
@@ -385,6 +434,16 @@ color-name@~1.1.4:
   resolved "https://registry.npm.taobao.org/color-name/download/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=
 
+commander@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-6.2.0.tgz?cache=0&sync_timestamp=1607933281807&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-6.2.0.tgz#b990bfb8ac030aedc6d11bc04d1488ffef56db75"
+  integrity sha1-uZC/uKwDCu3G0RvATRSI/+9W23U=
+
+commander@^2.7.1:
+  version "2.20.3"
+  resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.3.tgz?cache=0&sync_timestamp=1607933281807&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
+
 compressible@~2.0.16:
   version "2.0.18"
   resolved "https://registry.npm.taobao.org/compressible/download/compressible-2.0.18.tgz#af53cca6b070d4c3c0750fbd77286a6d7cc46fba"
@@ -545,6 +604,13 @@ diff@^4.0.1:
   resolved "https://registry.npm.taobao.org/diff/download/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=
 
+doctrine@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/doctrine/download/doctrine-3.0.0.tgz#addebead72a6574db783639dc87a121773973961"
+  integrity sha1-rd6+rXKmV023g2OdyHoSF3OXOWE=
+  dependencies:
+    esutils "^2.0.2"
+
 dot-prop@^5.2.0:
   version "5.3.0"
   resolved "https://registry.npm.taobao.org/dot-prop/download/dot-prop-5.3.0.tgz?cache=0&sync_timestamp=1605778245141&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdot-prop%2Fdownload%2Fdot-prop-5.3.0.tgz#90ccce708cd9cd82cc4dc8c3ddd9abdd55b20e88"
@@ -630,6 +696,11 @@ esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.npm.taobao.org/esprima/download/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
+
+esutils@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.npm.taobao.org/esutils/download/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
+  integrity sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=
 
 etag@~1.8.1:
   version "1.8.1"
@@ -774,7 +845,7 @@ glob-parent@~5.1.0:
   dependencies:
     is-glob "^4.0.1"
 
-glob@^7.1.3:
+glob@7.1.6, glob@^7.1.3:
   version "7.1.6"
   resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha1-FB8zuBp8JJLhJVlDB0gMRmeSeKY=
@@ -1032,7 +1103,7 @@ jju@^1.1.0:
   resolved "https://registry.npm.taobao.org/jju/download/jju-1.4.0.tgz#a3abe2718af241a2b2904f84a625970f389ae32a"
   integrity sha1-o6vicYryQaKykE+EpiWXDzia4yo=
 
-js-yaml@^3.12.1:
+js-yaml@^3.12.1, js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.npm.taobao.org/js-yaml/download/js-yaml-3.14.1.tgz?cache=0&sync_timestamp=1607370811335&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjs-yaml%2Fdownload%2Fjs-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha1-2ugS/bOCX6MGYJqHFzg8UMNqBTc=
@@ -1130,6 +1201,16 @@ lodash-id@^0.14.0:
   version "0.14.0"
   resolved "https://registry.npm.taobao.org/lodash-id/download/lodash-id-0.14.0.tgz#baf48934e543a1b5d6346f8c84698b1a8c803896"
   integrity sha1-uvSJNOVDobXWNG+MhGmLGoyAOJY=
+
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.npm.taobao.org/lodash.get/download/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.npm.taobao.org/lodash.isequal/download/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
 
 lodash@4, lodash@^4.17.20:
   version "4.17.20"
@@ -1818,6 +1899,36 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+swagger-jsdoc@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/swagger-jsdoc/download/swagger-jsdoc-6.0.0.tgz#dee2e0b12950ea63fc842d9a6048d47ff8780334"
+  integrity sha1-3uLgsSlQ6mP8hC2aYEjUf/h4AzQ=
+  dependencies:
+    commander "6.2.0"
+    doctrine "3.0.0"
+    glob "7.1.6"
+    swagger-parser "10.0.2"
+    yaml "2.0.0-1"
+
+swagger-parser@10.0.2:
+  version "10.0.2"
+  resolved "https://registry.npm.taobao.org/swagger-parser/download/swagger-parser-10.0.2.tgz#d7f18faa09c9c145e938977c9bd6c3435998b667"
+  integrity sha1-1/GPqgnJwUXpOJd8m9bDQ1mYtmc=
+  dependencies:
+    "@apidevtools/swagger-parser" "10.0.2"
+
+swagger-ui-dist@^3.18.1:
+  version "3.38.0"
+  resolved "https://registry.npm.taobao.org/swagger-ui-dist/download/swagger-ui-dist-3.38.0.tgz?cache=0&sync_timestamp=1608032842342&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fswagger-ui-dist%2Fdownload%2Fswagger-ui-dist-3.38.0.tgz#fd7c6c04f2eb2dbfedd94722aa3148f3bf354cb5"
+  integrity sha1-/XxsBPLrLb/t2UciqjFI8781TLU=
+
+swagger-ui-express@^4.1.6:
+  version "4.1.6"
+  resolved "https://registry.npm.taobao.org/swagger-ui-express/download/swagger-ui-express-4.1.6.tgz#682294af3d5c70f74a1fa4d6a9b503a9ee55ea82"
+  integrity sha1-aCKUrz1ccPdKH6TWqbUDqe5V6oI=
+  dependencies:
+    swagger-ui-dist "^3.18.1"
+
 term-size@^2.1.0:
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/term-size/download/term-size-2.2.1.tgz#2a6a54840432c2fb6320fea0f415531e90189f54"
@@ -1966,6 +2077,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+validator@^12.0.0:
+  version "12.2.0"
+  resolved "https://registry.npm.taobao.org/validator/download/validator-12.2.0.tgz#660d47e96267033fd070096c3b1a6f2db4380a0a"
+  integrity sha1-Zg1H6WJnAz/QcAlsOxpvLbQ4Cgo=
+
 vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
@@ -2022,6 +2138,11 @@ yallist@^4.0.0:
   resolved "https://registry.npm.taobao.org/yallist/download/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=
 
+yaml@2.0.0-1:
+  version "2.0.0-1"
+  resolved "https://registry.npm.taobao.org/yaml/download/yaml-2.0.0-1.tgz#8c3029b3ee2028306d5bcf396980623115ff8d18"
+  integrity sha1-jDAps+4gKDBtW885aYBiMRX/jRg=
+
 yargs-parser@^20.2.2:
   version "20.2.4"
   resolved "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-20.2.4.tgz#b42890f14566796f85ae8e3a25290d205f154a54"
@@ -2044,3 +2165,14 @@ yn@3.1.1:
   version "3.1.1"
   resolved "https://registry.npm.taobao.org/yn/download/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha1-HodAGgnXZ8HV6rJqbkwYUYLS61A=
+
+z-schema@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npm.taobao.org/z-schema/download/z-schema-4.2.3.tgz#85f7eea7e6d4fe59a483462a98f511bd78fe9882"
+  integrity sha1-hffup+bU/lmkg0YqmPURvXj+mII=
+  dependencies:
+    lodash.get "^4.4.2"
+    lodash.isequal "^4.5.0"
+    validator "^12.0.0"
+  optionalDependencies:
+    commander "^2.7.1"
