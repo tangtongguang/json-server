@@ -2,6 +2,8 @@ import { genPosts } from "./schema/posts";
 import { genUsers } from "./schema/users";
 
 
-export default {
-  users: genUsers(1)
-}
+export default [
+  genUsers(1)
+]
+
+export const keys = ['users']
